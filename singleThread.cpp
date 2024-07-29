@@ -1,10 +1,10 @@
-#include <opencv2/opencv.hpp>
-#include <iostream>
-#include <chrono>
-#include <vector>
+#include <opencv2/opencv.hpp> 
+#include <iostream> //// la bibliothèque standard pour les entrées/sorties en C++.
+#include <chrono> // la bibliothèque pour la gestion du temps et des chronomètres.
+#include <vector> // 
 #include <string>
 
-void apply_gaussian_blur(const cv::Mat &src, cv::Mat &dst, int kernel_size) {
+void apply_gaussian_blur(const cv::Mat &src, cv::Mat &dst, int kernel_size) { // Applique un filtre de flou gaussien à une image
     cv::GaussianBlur(src, dst, cv::Size(kernel_size, kernel_size), 0);
 }
 
